@@ -12,16 +12,14 @@
 
 #ifndef __UNZIPLIB__
 #define __UNZIPLIB__
-#if defined( PICO_BUILD ) || defined( __MACH__ ) || defined( __LINUX__ ) || defined( __MCUXPRESSO )
+
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
 #define memcpy_P memcpy
 #define PROGMEM
-#else
-#include <Arduino.h>
-#endif
+
 //
 // unzip library
 // Written by Larry Bank
